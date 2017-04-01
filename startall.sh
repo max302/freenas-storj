@@ -1,3 +1,5 @@
+echo #!/bin/sh
+
 config_dir="/etc/storjshare/config/" #The startall command will start *.json files in this directory
 
 #Fetch config files present int config directory
