@@ -10,8 +10,6 @@ if [ -z "$config_enum" ]; then
   exit 1
 fi
 
-#Makes sure the daemon is started
-eval "storjshare daemon"
 for config_file in $config_enum
 do
   eval "storjshare start --config" "$config_dir$config_file"
