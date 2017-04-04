@@ -2,7 +2,7 @@
 
 There is currently [a bug](https://bugs.freenas.org/issues/22672) in the latest stable version of FreeNAS Corral that borks container creation from non-FreeNAS collections if done in the GUI. [You can build this image via cli](https://wiki.freenas.org/index.php/Docker), and the pre-defined parameters will show up properly.
 
-#Use Case
+# Use Case
 
 This image was designed specifically for multi-disk, multi-share Storj farming on FreeNAS Corral machines.
 
@@ -23,11 +23,11 @@ This image over-rides storjshare-daemon defaults in order to make the file struc
 + **/etc/storjshare/logs/**: holds all log files, named n.log
 + **/etc/storjshare/data/**: holds points to all data-bearing volumes in the form of numbered subfolders
 
-## Mounting volumes
+# Mounting volumes
 
 My prefer method for mounting volumes looks something like this:
 
-![Volume arrangement](../blog/master/arrayconfig.jpg?raw=true)
+![Volume arrangement](../master/arrayconfig.jpg?raw=true)
 
 Configs live on a redundant array to make sure that a single disk failure does not affect the entire operation, as do logs. A chunk of the redundant volume (in ZFS, you probably want a seperated dataset) is attributed for Storj data use, typically in **/etc/storjshare/data/0/**.
 
