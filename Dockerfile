@@ -1,5 +1,5 @@
 FROM max302/storjshare-daemon:latest
-LABEL org.freenas.interactive="false"                             \
+LABEL org.freenas.interactive="false"                              \
       org.freenas.version="2.5.1"                                 \
       org.freenas.upgradeable="false"                             \
       org.freenas.expose-ports-at-host="true"                     \
