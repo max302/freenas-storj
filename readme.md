@@ -13,7 +13,7 @@ Chances are you're already running your FreeNAS machine 24/7 to serve up your fi
 The image contains a vanilla install  of [storjshare-daemon](https://github.com/Storj/storjshare-daemon), installed as per instructions provided by the Storj team, and an install of supervisord to start the whole ordeal. Upon starting, supervisord is called up and does the following things:
 
 1. Starts the storjshare daemon
-2. Runs [startall.sh](../blob/master/startall.sh) to start up all the config files.
+2. Runs [startall.sh](../master/startall.sh) to start up all the config files.
 
 # Directory structure & volume mounting
 
